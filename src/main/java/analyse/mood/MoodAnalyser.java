@@ -6,7 +6,7 @@ public class MoodAnalyser {
         String[] msgWords = message.split(" ");
         for (String word : msgWords)
             if (word.equalsIgnoreCase("happy"))
-                return "Happy!";
-        return "Sad!";
+                return "HAPPY";
+        return "SAD";
     }
 }
