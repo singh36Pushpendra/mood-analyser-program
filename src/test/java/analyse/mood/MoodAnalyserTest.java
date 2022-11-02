@@ -7,7 +7,7 @@ public class MoodAnalyserTest {
 
     @Test
     public void analyseMoodTest() {
-        MoodAnalyser analyser = new MoodAnalyser();
-        Assert.assertEquals("HAPPY", analyser.analyseMood("I am in Any Mood"));
+        MoodAnalyser analyser = new MoodAnalyser("I am in Any Mood");
+        Assert.assertEquals("HAPPY", analyser.analyseMood());
     }
 }
