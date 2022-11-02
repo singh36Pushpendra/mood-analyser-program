@@ -8,5 +8,9 @@ public class MoodAnalyserMain {
         MoodAnalyser analyser = new MoodAnalyser(msg);
         String mood = analyser.analyseMood();
         System.out.println("Your mood is: " + mood);
+
+        MoodAnalyser nullMood = new MoodAnalyser(null);
+        String mood1 = nullMood.analyseMood();
+        System.out.println(mood1);
     }
 }

@@ -12,7 +12,14 @@ public class MoodAnalyser {
     }
 
     String analyseMood() {
-        String[] msgWords = message.split(" ");
+        String[] msgWords;
+        try {
+            msgWords = message.split(" ");
+        }
+        catch (NullPointerException npe) {
+            System.out.println(npe.getMessage());
+            return "";
+        }
         for (String word : msgWords)
             if (word.equalsIgnoreCase("sad"))
                 return "SAD";
