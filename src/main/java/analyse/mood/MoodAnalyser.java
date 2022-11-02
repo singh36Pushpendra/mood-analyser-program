@@ -17,8 +17,7 @@ public class MoodAnalyser {
             msgWords = message.split(" ");
         }
         catch (NullPointerException npe) {
-            System.out.println(npe.getMessage());
-            return "";
+            return "HAPPY";
         }
         for (String word : msgWords)
             if (word.equalsIgnoreCase("sad"))
